@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe CV</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="flex">
+        <img src="https://www.crearuncurriculum.com/wp-content/uploads/2020/01/Foto-CV-1.jpg" alt="Foto de la persona en cuestiòn" >
+        <div>
+        <h1>Jane Doe</h1>
+        <hr>
+        <h2>Creador de Contenido</h2>
+        <p>Twitter: <a href="https://twitter.com/janedoe">@Janedoe</a> </p>
+        </div>
+
+    </header>
+
+    <section>
+    <article>
+        <h2> <li> Informaciòn Profesional</li> 
+        </h2>
+
+    <ul>        
+        <p> 2019 - presente, Agente de medios sociales KLM, Cygnific, Utrecht, Países Bajos </p>
+        <p> 2020 - actualidad, Promotor y Director de Marketing, IBB Fest, Utrecht, Países Bajos </p>
+        <p> 2022 - actualidad, Coordinadora de eventos y responsable de marketing, Footy, Utrecht/Amsterdam, Países Bajos </p>
+                               
+    </ul>
+    <hr>
+    <h2><li>Conocimientos</li></h2>
+            <div class="flex" style="align-items: baseline;">
+            <p>Javascript</p>
+            <progress value="60" max="100"></progress>
+
+        </article>
+
+    <aside>
+        <h2><li>Informaciòn Academica</li></h2>
+        <p>2010 - 2015, Arte y Economía, Universidad de las Artes, Utrecht, Países Bajos
+            Licenciatura completada, con gratificación. </p>
+        <p>2009, Economía Empresarial, Universidad de Ámsterdam, Ámsterdam, Países Bajos </p>
+        <p>2008, Derecho, Universidad de Utrecht, Utrecht, Países Bajos </p>
+        <hr>
+
+        <h3><li>Formulario de contacto</li></h3>  
+        <div class="contact_form">
+            <div class="formulario">      
+            <form action="submeter-formulario.php" id = 'formulario' method="post">       
+            
+                    
+            <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+            <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            </p>
+                      
+            <p>
+            <label for="email" class="colocar_email">Email
+            <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+            </p>
+                                
+            <p>
+            <label for="mensaje" class="colocar_mensaje">Mensaje
+            <span class="obligatorio">*</span>
+            </label>                     
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+            </p>                    
+                      
+    <input type="submit"    onclick="return Enviarformulario()";  value="Enviar"  >     
+
+     <div id="error"></div>  
+    
+    </div>                              
+            
+    </form> 
+                 
+       <script src="function.js"></script>  
+
+
+    </aside>
+</section> 
+
+  
+
+<footer>
+    <p>Author: Jane Doe<br>
+    <a href="mailto:hege@example.com">janedoe@mail.com</a></p>
+  </footer>
+
+
+
+
+</body>
+</html>
